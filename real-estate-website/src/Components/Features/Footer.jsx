@@ -5,13 +5,13 @@ import SendEmailSVG from "../SVGs/SendEmailSVG"
 
 const Footer = () => {
   return (
-    <div className="bg-grey10">
-      <div className="flex w-5/6 mx-auto justify-between p-10">
+    <div className="bg-grey08">
+      <div className="flex mx-auto justify-between p-14">
         <div className="">
           <div className="logo">
             <LaptopLogoSVG />
           </div>
-          <div className="border border-gray-400 rounded-md px-4 py-2 flex mt-2">
+          <div className="border border-gray-400 rounded-md px-4 py-2 flex items-center gap-x-2 mt-4">
             <InputEmailSVG />
             <input type="email" placeholder="Enter Your Email" className="outline-none border-none bg-transparent"/>
             <SendEmailSVG />
