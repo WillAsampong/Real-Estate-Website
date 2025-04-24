@@ -1,3 +1,4 @@
+import StatCard from "../Components/Features/StatCard"
 import TopRightArrow from "../Components/SVGs/TopRightArrowSVG"
 import UnionSVG from "../Components/SVGs/UnionSVG"
 
@@ -15,22 +16,12 @@ const Home = () => {
           </div>
           <div className="flex gap-x-4">
             <button className="p-2 rounded-md bg-transparent text-white border border-grey50 text-sm">Learn More</button>
-            <button className="p-2 rounded md text-white bg-purple-600 text-sm">Browse Properties</button>
+            <button className="p-2 rounded-md text-white bg-purple-600 border border-purple-600 transition-all hover:bg-transparent hover:border hover:border-purple-600 text-sm">Browse Properties</button>
           </div>
           <div className="stats flex gap-x-4">
-            <div className="bg-grey10 p-5 rounded-md border border-grey20">
-              <span className="text-4xl text-white font-bold">200+</span>
-              <p className="text-grey50">Happy Customers</p>
-            </div>
-            <div className="bg-grey10 p-5 rounded-md border border-grey20">
-              <span className="text-4xl text-white font-bold">10k+</span>
-              <p className="text-grey50">Properties For Clients</p>
-            </div>
-            <div className="bg-grey10 p-5 rounded-md border border-grey20">
-              <span className="text-4xl text-white font-bold">16+</span>
-              <p className="text-grey50">Years of Experience</p>
-            </div>
-            
+            <StatCard stat='200+' text='Happy Customers'/>
+            <StatCard stat='10k+' text='Properties For Clients'/>
+            <StatCard stat='16+' text='Years of Experience'/>
           </div>
         </div>
         <div className="right-side flex-1">
@@ -51,10 +42,12 @@ const Home = () => {
           <div className="absolute right-4 top-2">
             <TopRightArrow className=""/>
           </div>
-          <div className="icon mb-4 mx-auto">
-            <UnionSVG />
+          <div>
+            <div className="icon mb-4 mx-auto">
+              <UnionSVG />
+            </div>
+            <p className="text-white font-semibold text-center">Unlock Property Value</p>
           </div>
-          <p className="text-white font-semibold text-center">Unlock Property Value</p>
         </div>
         <div className="relative flex-1 bg-grey10 px-6 py-4 border border-grey40 rounded-md">
           <div className="absolute right-4 top-2">

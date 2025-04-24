@@ -6,8 +6,8 @@ import SendEmailSVG from "../SVGs/SendEmailSVG"
 const Footer = () => {
   return (
     <div className="bg-grey08">
-      <div className="flex mx-auto justify-between p-14">
-        <div className="">
+      <div className="flex mx-auto p-14 gap-x-8">
+        <div className="flex-none">
           <div className="logo">
             <LaptopLogoSVG />
           </div>
@@ -18,7 +18,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="footer-links flex gap-x-12">
+        <div className="footer-links flex grow justify-around ">
           <div className="Home">
             <span className="text-grey50">Home</span>
             <ul className="text-sm text-white flex flex-col gap-y-4 pt-2">
