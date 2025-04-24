@@ -1,5 +1,5 @@
 
-const UnionSVG = () => {
+const Service1SVG = () => {
   return (
     <svg width="63" height="62" viewBox="0 0 83 82" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect x="1" y="0.5" width="81" height="81" rx="40.5" stroke="url(#paint0_linear_121_1892)"/>
@@ -31,4 +31,4 @@ const UnionSVG = () => {
   )
 }
 
-export default UnionSVG
+export default Service1SVG
